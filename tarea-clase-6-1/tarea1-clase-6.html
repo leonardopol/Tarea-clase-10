@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>ejercicio 1 clase 6</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../tarea-clase-6-1/css/tarea1-clase-6.css'>
+    
+</head>
+<body>
+        <form name="form" action="form" id="form" class="visible" novalidate>
+            <label for="cantidad-familiares">Ingrese cantidad de familiares</label>
+            <input type="number" placeholder="Ej..3" id="cantidad-familiares">
+            
+
+            <div id="crearFamiliares">
+                
+            </div>
+            
+
+            <div id="mostrar-resultados" class="oculto">
+                <p>EL mayor es: <strong id="mayor-edad"></strong></p>
+                <p>EL menor es: <strong id="menor-edad"></strong></p>
+                <p>EL promedio es: <strong id="promedio-edad"></strong></p>
+                <button type="reset" id="boton-reset">resetear</button>
+            </div>
+            <div id="mostrar-errores" class="oculto">
+                <ul id="error"></ul>
+            </div>
+            <p>
+                <button name="submit" id="boton-enviar">enviar</button>
+            </p>
+            <div id="boton-calcular" class="oculto">
+                <button name="submit">Calcular</button>
+            </div>
+        </form>
+    <script src='../tarea-clase-6-1/js/tarea1-clase-6-calculos.js'></script>
+    <script src='../tarea-clase-6-1/js/tarea1-clase-6.js'></script>
+    <script src='../tarea-clase-6-1/js/tarea1-clase-6-validaciones.js'></script>
+    <script src='../tarea-clase-6-1/js/tarea1-clase-6-pruebas.js'></script>
+</body>
+</html>
