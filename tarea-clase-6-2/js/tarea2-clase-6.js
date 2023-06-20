@@ -8,6 +8,7 @@ Punto bonus: si hay inputs vacíos, ignorarlos en el cálculo (no contarlos como
 
 let indice = 0;
 document.querySelector("#boton-agregar").onclick = function(event){
+    habilitarBotonCalcular();
     agregarSalario();
     event.preventDefault();
 }
@@ -79,10 +80,14 @@ function ocultarBotonCalcular(){
 
 function mostrarBotonCalcular(){
     document.querySelector("#boton-calcular").className = "";
+    document.querySelector("#boton-calcular").className = "btn btn-success";
+    const $botonCalcular = document.querySelector("#boton-calcular");
+    $botonCalcular.disabled = true;
 }
 
 function mostrarResultados(){
     document.querySelector("#mostrar-resultados").className = 'visible';
+    document.querySelector("#mostrar-resultados").className = "col-4";
 }
 
 function mostrarMayorSalario(tipo, valor) {
@@ -122,10 +127,16 @@ function ocultarErrores(){
 
 function mostrarBotonReset(){
     document.querySelector("#boton-reset").className = "";
+    document.querySelector("#boton-reset").className = "btn btn-warning";
 }
 
 function ocultarBotonReset(){
     document.querySelector("#boton-reset").className = "oculto";
+}
+
+function habilitarBotonCalcular(){
+    const $botonCalcular = document.querySelector("#boton-calcular");
+    $botonCalcular.disabled = false;
 }
 
 function resetear(){

@@ -6,35 +6,47 @@
     <title>ejercicio 1 clase 6</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='../tarea-clase-6-1/css/tarea1-clase-6.css'>
-    
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
 </head>
 <body>
+    <header><h3 class="text-center">Calculador de edades</h3></header><hr>
+    <div class="container-fluid">    
         <form name="form" action="form" id="form" class="visible" novalidate>
-            <label for="cantidad-familiares">Ingrese cantidad de familiares</label>
-            <input type="number" placeholder="Ej..3" id="cantidad-familiares">
-            
+            <div class="row" id="bloque-familiares">
+                <div class="col">        
+                    <label for="cantidad-familiares">Ingrese cantidad de familiares:</label>
+                    <input type="number" placeholder="Ej..3" id="cantidad-familiares">
+                    <button name="submit" id="boton-enviar" class="btn btn-primary">enviar</button>
+                </div>
+                <!--div class="col">
+                    <button name="submit" id="boton-enviar" class="btn btn-primary">enviar</button>
+                </div-->
+            </div>
+            <br>
+            <div class="container-fluid">
+                <div class="row" id="bloque-mostrar-familiares-creados"> 
+                    <div class="col" id="crearFamiliares">
 
-            <div id="crearFamiliares">
-                
-            </div>
-            
-
-            <div id="mostrar-resultados" class="oculto">
-                <p>EL mayor es: <strong id="mayor-edad"></strong></p>
-                <p>EL menor es: <strong id="menor-edad"></strong></p>
-                <p>EL promedio es: <strong id="promedio-edad"></strong></p>
-                <button type="reset" id="boton-reset">resetear</button>
-            </div>
-            <div id="mostrar-errores" class="oculto">
-                <ul id="error"></ul>
-            </div>
-            <p>
-                <button name="submit" id="boton-enviar">enviar</button>
-            </p>
-            <div id="boton-calcular" class="oculto">
-                <button name="submit">Calcular</button>
-            </div>
+                    </div>
+                </div>
+            </div>        
+        <div id="mostrar-resultados" class="oculto">
+            <br>
+            <p>EL familiar de mayor edad es: <strong id="mayor-edad"></strong></p>
+            <p>EL familiar de menor edad es: <strong id="menor-edad"></strong></p>
+            <p>EL promedio de edad del grupo familiar es: <strong id="promedio-edad"></strong></p>
+            <button type="reset" class="btn btn-primary" id="boton-reset">resetear</button>
+        </div>
+        <div id="mostrar-errores" class="oculto">
+                <strong id="error"></strong>
+        </div>
+        <br>
+        <div id="boton-calcular" class="oculto">
+            <button name="submit" class="btn btn-primary">Calcular</button>
+        </div>
         </form>
+        </div>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>    
     <script src='../tarea-clase-6-1/js/tarea1-clase-6-calculos.js'></script>
     <script src='../tarea-clase-6-1/js/tarea1-clase-6.js'></script>
     <script src='../tarea-clase-6-1/js/tarea1-clase-6-validaciones.js'></script>
