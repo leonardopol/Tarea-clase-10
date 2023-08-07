@@ -60,7 +60,7 @@ function crearFamiliares(numeroFamiliares){
         $inputs.type = "number";
         $labels.htmlFor = $inputs.id;
         $labels.className = "familiar";
-        $labels.textContent = `familiar Nro${i + 1}`;
+        $labels.textContent = `edad familiar #${i + 1}`;
         let $saltoDeLinea = document.createElement("br");
         $saltoDeLinea.className = "familiar";
         $nodoDiv.appendChild($labels);
@@ -189,6 +189,12 @@ function cambiarClaseAfamiliar($numeroFamiliares){
      }
 }
 
+function mostrarBotonenviar(){
+    const $botonEnviar = document.querySelector('#boton-enviar');
+    $botonEnviar.className = "";
+    $botonEnviar.className = "btn btn-primary";
+}
+
 function resetear(){
 
     let $familiares = document.querySelectorAll(".familiar");
@@ -201,6 +207,7 @@ function resetear(){
         ocultarBotonCalcular();
         ocultarErrores();
         noHayFamiliaresCreados = true;
+        mostrarBotonenviar();
 }
 
 document.querySelector("#boton-reset").onclick = resetear;

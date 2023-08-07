@@ -6,6 +6,37 @@
     border: 2px solid red;
 }
 
+#titulo {
+    text-align: center;
+}
+.botones-principales {
+    text-align: center;
+}
+.botones-calcularYreset {
+    text-align: center;
+}
+
+input {
+    border: 2px solid darkcyan;
+}
+button {
+    /*font-size: 20px;*/
+    /*line-height: 50px;*/
+    text-align: center;
+    width: 135px;
+    height: 50px;
+  }
+ #columna-reset {
+    text-align: center;
+ }
+ #mostrar-errores {
+    text-align: center;
+ }
+ #error {
+    
+    color: red;
+ }
+
 
 
 

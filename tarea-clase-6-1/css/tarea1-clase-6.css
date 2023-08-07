@@ -5,3 +5,27 @@
 .error {
     border: 2px solid red;
 }
+input {
+    border: 2px solid darkcyan;
+    
+    /*width: 300px;*/
+}
+
+#bloque-familiares {
+    /*width: 700px;*/
+    /*height: 60px;*/
+    text-align: center;
+}
+#bloque-mostrar-familiares-creados{
+    text-align:center;
+}
+#mostrar-errores, #mostrar-resultados {
+    text-align: center; 
+}
+#boton-calcular {
+    text-align: center;
+}
+#error {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: red;
+}
